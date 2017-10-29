@@ -17,11 +17,11 @@ BeautifulSoup : pip install beautifulsoup
 
 1. Open the terminal and go to the project directory.
 2. Enter pwd and copy the path of proect directory and replace this with the path variable in line no 33 in main.py file.
-   <code>For Example : #chhange path here <br>
+   For Example : #chhange path here <br>
    path="/home/sakir/Desktop/blue/result/"+company_name; <br>
    change this to <br>
    #chhange path here <br>
-   path="YOUR PATH HERE/result/"+company_name; <br></code>
+   path="YOUR PATH HERE/result/"+company_name; <br>
 3. Now to run the script using the following command.
    <code>
     python main.py PermID HierarchicalId
