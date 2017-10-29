@@ -1,5 +1,4 @@
-# web-scrapping-and-crawling
-
+# Buisness-Classification-Index
 <code> Project Setup Guide </code>
 
 Python : sudo apt-get install python
@@ -11,7 +10,7 @@ Install the following Libraries
 Pandas : pip install pandas
 xlrd: pip install xlrd
 requests : pip install requests
-BeautifulSoup : pip install beautifulsoup
+BeautifulSoup : pip install BeautifulSoup
 
 <code>Running The script</code>
 
@@ -33,4 +32,11 @@ BeautifulSoup : pip install beautifulsoup
    In Each Directory there will be a file called company_ranking.csv which will store the company ranking data.
    And other files with the name_of_company.csv which will store the employee data.
 
- 
+<code>NOTE :</code>
+if the following error occurs :
+  /usr/local/lib/python2.7/dist-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+
+then change the following statments in line no 51 and 81 from
+<code> soup = BeautifulSoup(html) </code> to <code> soup = BeautifulSoup(html,"lxml") </code>
+

@@ -4,7 +4,7 @@ import csv #creating and reading csv files
 import os #creating Directories
 import requests #downloading html content of the page
 #from BeautifulSoup import BeautifulSoup #extracting data from Html page
-from bs4 import BeautifulSoup
+from BeautifulSoup import BeautifulSoup
 import sys #conversion of ASCII to UTF-8 and reading command line arguments
 #Conversion o f ASCII TO UTF-8 reading format
 reload(sys)
@@ -48,7 +48,7 @@ response = requests.get(url)
 html=response.content
 
 
-soup = BeautifulSoup(html,"lxml")
+soup = BeautifulSoup(html)
 table=soup.find('tbody',attrs={'class':'dataSmall'})
 
 list_of_rows = []
@@ -78,7 +78,7 @@ for item in list_of_rows:
         response = requests.get(new_url)
         html=response.content
 
-        soup = BeautifulSoup(html,"lxml")
+        soup = BeautifulSoup(html)
         table=soup.find('div',attrs={'class':'section'})
 
         list_of_rows = []
