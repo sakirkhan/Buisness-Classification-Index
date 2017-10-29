@@ -7,10 +7,10 @@ Installing PIP : sudo apt-get install python-pip
 
 Install the following Libraries
 
-Pandas : pip install pandas
-xlrd: pip install xlrd
-requests : pip install requests
-BeautifulSoup : pip install BeautifulSoup
+Pandas : pip install pandas</br>
+xlrd: pip install xlrd</br>
+requests : pip install requests</br>
+BeautifulSoup : pip install BeautifulSoup</br>
 
 <code>Running The script</code>
 
