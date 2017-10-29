@@ -11,7 +11,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 #reading sample.xls File
-df = pandas.read_excel('./sample.xls',columns=['company','PermID','HierarchicalID']);
+df = pandas.read_excel('./sample.xls',columns=['company','PermID','HierarchicalID','IndustryID']);
 
 #reading command line arguments
 pId=int(sys.argv[1])
@@ -31,6 +31,8 @@ industry_code=list(data['IndustryID'])
 company_name=c_name[0]
 
 #Creating Directory to store result. please change the path to your program directory.(use pwd command on linux and append /result to it)
+
+#chhange path here
 path="/home/sakir/Desktop/blue/result/"+company_name;
 #print path
 if not os.path.exists(path):
