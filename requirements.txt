@@ -1,5 +1,0 @@
-python 3
-
-urllib2 library
-beautifulsoup library 
-
